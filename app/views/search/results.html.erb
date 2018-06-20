@@ -1,0 +1,18 @@
+<div class="jumbotron">
+<h1>Results for <%= @name %></h1>
+  <% if @error_message.nil?%>
+  <div align ='center'class="">
+    <h2><%= @description%> <%=image_tag "http://openweathermap.org/img/w/#{@icon}.png"%></h2>
+    <h1><%= @temp%>&deg;</h1>
+    <h2><%= @humidity%> % Humidity</h2>
+    <h4>High: <%=@temp_high %>&deg;F / Low: <%= @temp_low%>&deg;</h4>
+  </div>
+  <%else%>
+  <div class="alert alert-danger" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <%=@error_message%>
+  </div>
+  <%end%>
+  <h2>Search another city</h2>
+  <%= render 'form'%>
+</div>
