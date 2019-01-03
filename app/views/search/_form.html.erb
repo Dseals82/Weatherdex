@@ -1,4 +1,4 @@
 <%= form_tag(search_results_path, method: :get) do %>
-  <%= text_field_tag :zipcode, nil, placeholder: 'Please enter zipcode', autofocus: true, class:'form-control'%><br>
+  <%= text_field_tag :zipcode, nil, placeholder: 'City, State or Zipcode', autofocus: true, class:'form-control'%><br>
   <%= submit_tag 'Get Weather', class: 'btn btn-success' %>
 <%end%>
