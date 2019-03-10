@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Weatherdex</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/darkly/bootstrap.min.css">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
@@ -23,6 +24,15 @@
   <div class="container">
     <%= yield %>
     <hr>
+    <footer id="mainfooter">
+      Darius Seals Copyright &copy; 2019 <br>
+    <a href="https://www.linkedin.com/in/dariusseals/" target="_blank">
+      <i class="fab fa-linkedin" id="icons"></i>
+    </a>
+    <a href="https://github.com/Dseals82" target="_blank">
+      <i class="fab fa-github" id="icons"></i>
+    </a>
+  </footer>
   </div>
 </body>
 </html>
